@@ -53,3 +53,9 @@ export class BindingComponent {
     this.promedio = "";
   }
 }
+// Ejercicio 1, punto 2. Va en este archivo?
+export class Usuario
+{
+  public nombre: string = "";
+  public clave: string = "";
+}
