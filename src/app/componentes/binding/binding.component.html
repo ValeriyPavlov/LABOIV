@@ -1,0 +1,20 @@
+<!-- Interpolation {{}}   controlador -> vista -->
+<h1>{{name}}</h1>
+
+<!-- Property Binding []  controlador -> vista  -->  <!-- Event Binding ()  vista -> controlador  -->
+<input type="button" [value]="btnLabel" (click)="onClick($event)">
+<!-- Para usar los componentes nativos por ejemplo onclick, se debe sacarle el "on":  (click)="mi_metodo()" !!!!!-->
+
+<!-- Two Way Binding [()]  vista <-> controlador  -->
+<input type="text" [(ngModel)]="apellido" placeholder="Ingrese su apellido">
+<!-- ngModel se debe agregar a los modulos en app.module.ts -->
+<!-- Para el otro lado, lo que escribas en ngModel lo guarda en la variable -->
+<h2>{{apellido}}</h2>
+
+<input type="text" [(ngModel)]="edadUno" placeholder="EdadUno"><br>
+<input type="text" [(ngModel)]="edadDos" placeholder="EdadDos"><br>
+<input type="text" value="{{promedio}}">
+<input type="text" value="{{suma}}">
+<input type="button" [value]="btnCalcular" (click)="Calcular()">
+<input type="button" [value]="btnLimpiar" (click)="Limpiar()">
+
