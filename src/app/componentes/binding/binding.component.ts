@@ -31,18 +31,8 @@ export class BindingComponent {
 
   public Calcular(): void
   {
-    this.Sumar();
-    this.Promediar();
-  }
-
-  public Sumar(): void
-  {
     this.suma = parseInt(this.edadDos) + parseInt(this.edadUno);
-  }
-
-  public Promediar(): void
-  {
-    this.promedio = (parseInt(this.edadDos) + parseInt(this.edadUno)) / 2;
+    this.promedio = this.suma / 2;
   }
 
   public Limpiar(): void
@@ -53,7 +43,7 @@ export class BindingComponent {
     this.promedio = "";
   }
 }
-// Ejercicio 1, punto 2. Va en este archivo?
+// Ejercicio 1, punto 2. Va en este archivo o es un componente mas?
 export class Usuario
 {
   public nombre: string = "";

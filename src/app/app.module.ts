@@ -12,6 +12,7 @@ import { UsuarioComponent } from './componentes/usuario/usuario.component';
 
 @NgModule({
   declarations: [
+    //Componentes
     AppComponent,
     BindingComponent,
     BienvenidoComponent,

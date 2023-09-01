@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./usuario.component.scss']
 })
 export class UsuarioComponent {
-
+  public nombre: string = "";
+  public clave: string = "";
 }
